@@ -13,6 +13,6 @@ Una simulación de manejo de tarjetas de crédito para clientes.
 1. Asegúrate de tener Python instalado.
 2. Clona el repositorio:
    ```bash
-   git clone https://github.com/jmarquezdev20/TARJETA.git
-   cd TARJETA
+   git clone https://github.com/jmarquezdev20/Simulado-Tarjeta.git
+   cd Simulado-tarjeta
 
