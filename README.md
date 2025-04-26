@@ -14,5 +14,5 @@ Una simulación de manejo de tarjetas de crédito para clientes.
 2. Clona el repositorio:
    ```bash
    git clone https://github.com/jmarquezdev20/Simulado-Tarjeta.git
-   cd Simulado-tarjeta
+   cd Simulado-Tarjeta
 
