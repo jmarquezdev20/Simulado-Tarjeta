@@ -43,14 +43,14 @@ class Tarjeta:
             print(f"Error al guardar historial: {e}")
           
     def desactivar(self):
-        #vercamos si la tarjeta esta activa antes de cualquier accion
+        #verificamos si la tarjeta esta activa antes de cualquier accion
         if self.estado:
             self.estado=False
             print("tarjeta desactivada")
             self.agregar_historial("desactivar",0)
 
     def activar(self):
-        #vercamos si la tarjeta esta activa antes de cualquier accion
+        #verificamos si la tarjeta esta activa antes de cualquier accion
         if not self.estado:
             self.estado=True
             print("tarjeta activada")
@@ -61,7 +61,7 @@ class Tarjeta:
         Muestra el saldo actual si la tarjeta está activa. También registra esta acción en el historial.
         Si la tarjeta está desactivada, se informa al usuario y se registra igualmente la acción.
         """
-        #vercamos si la tarjeta esta activa antes de cualquier accion 
+        #verificamos si la tarjeta esta activa antes de cualquier accion 
         if self.estado:
             print(f"saldo actual: {self.saldo}")
             self.agregar_historial("consultar saldo",self.saldo)
@@ -77,7 +77,7 @@ class Tarjeta:
         Parámetros:
         monto (float): Cantidad de dinero a recargar. Debe ser mayor a 0.
     """  
-        #vercamos si la tarjeta esta activa antes de cualquier transaccion
+        #verificamos si la tarjeta esta activa antes de cualquier transaccion
         if self.estado:
             if monto>0:
                 self.saldo+=monto
@@ -98,7 +98,7 @@ class Tarjeta:
         monto (float): Monto a pagar. Debe ser mayor a 0.
 
     """
-        #vercamos si la tarjeta esta activa antes de cualquier transaccion
+        #verificamos si la tarjeta esta activa antes de cualquier transaccion
         if not self.estado:
             print("tarjeta desactivada")
             return
